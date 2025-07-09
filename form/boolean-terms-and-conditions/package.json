@@ -1,0 +1,42 @@
+{
+  "name": "boolean-terms-and-conditions",
+  "version": "1.0.0",
+  "description": "Custom form field for Kissflow's form",
+  "main": "index.js",
+  "scripts": {
+    "dev": "form-field-scripts dev",
+    "build": "form-field-scripts build",
+    "zip": "rm -rf ./boolean-terms-and-conditions.zip ./dist && npm run build && cd ./dist && zip -q -r ../boolean-terms-and-conditions.zip . && rm -rf ../dist",
+    "unzip": "rm -rf ./boolean-terms-and-conditions && unzip boolean-terms-and-conditions.zip -d ./boolean-terms-and-conditions"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@kissflow/form-field-scripts": "workspace:^",
+    "@kissflow/form-field-config": "workspace:^",
+    "unzipper": "^0.10.14",
+    "zip": "^1.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "rules": {}
+  },
+  "keywords": [
+    "lcnc",
+    "no-code",
+    "low-code",
+    "platform",
+    "react",
+    "cli",
+    "kissflow",
+    "custom-components",
+    "custom-fields"
+  ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
