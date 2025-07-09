@@ -1,0 +1,43 @@
+{
+  "name": "text-texteditor",
+  "version": "1.0.0",
+  "description": "Custom form field for Kissflow's form",
+  "main": "index.js",
+  "scripts": {
+    "dev": "form-field-scripts dev",
+    "build": "form-field-scripts build",
+    "zip": "rm -rf ./text-texteditor.zip ./dist && npm run build && cd ./dist && zip -q -r ../text-texteditor.zip . && rm -rf ../dist",
+    "unzip": "rm -rf ./text-texteditor && unzip text-texteditor.zip -d ./text-texteditor"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@kissflow/form-field-scripts": "workspace:^",
+    "@kissflow/form-field-config": "workspace:^",
+    "unzipper": "^0.10.14",
+    "zip": "^1.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "rules": {}
+  },
+  "keywords": [
+    "lcnc",
+    "no-code",
+    "low-code",
+    "platform",
+    "react",
+    "cli",
+    "kissflow",
+    "custom-components",
+    "custom-fields"
+  ],
+  "dependencies": {
+    "helpers": "workspace:^",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

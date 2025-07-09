@@ -1,0 +1,42 @@
+{
+  "name": "no-web-readonly-table",
+  "version": "1.0.0",
+  "description": "Custom form field for Kissflow's form",
+  "main": "index.js",
+  "scripts": {
+    "dev": "form-field-scripts dev",
+    "build": "form-field-scripts build",
+    "zip": "rm -rf ./no-web-readonly-table.zip ./dist && npm run build && cd ./dist && zip -q -r ../no-web-readonly-table.zip . && rm -rf ../dist",
+    "unzip": "rm -rf ./no-web-readonly-table && unzip no-web-readonly-table.zip -d ./no-web-readonly-table"
+  },
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@kissflow/form-field-scripts": "workspace:^",
+    "@kissflow/form-field-config": "workspace:^",
+    "unzipper": "^0.10.14",
+    "zip": "^1.2.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app"
+    ],
+    "rules": {}
+  },
+  "keywords": [
+    "lcnc",
+    "no-code",
+    "low-code",
+    "platform",
+    "react",
+    "cli",
+    "kissflow",
+    "custom-components",
+    "custom-fields"
+  ],
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
